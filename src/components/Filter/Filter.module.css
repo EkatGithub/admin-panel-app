@@ -1,0 +1,19 @@
+.filter {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    padding: 16px;
+    background: var(--white-blue);
+    border-radius: 8px;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+}
+
+.input {
+    width: 142px;
+    margin-right: 4px;
+}
+
+.button {
+    margin-left: 5px;
+}
