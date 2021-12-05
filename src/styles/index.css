@@ -1,0 +1,45 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --blue: #459DF5;
+  --green: #0FB864;
+  --orange: #FF8C56;
+  --red: #F53152;
+  --light-blue: #BAD8F5;
+  --night-black: #2B2D33;
+  --night-white: #BCC4CC;
+  --white-blue: #EBF0F5;
+  --shade-day: rgba(0, 0, 0, .15);
+  --shade-night: rgba(0, 0, 0, .30);
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  margin-top: 42px;
+  margin-bottom: 2px;
+  margin-right: 4px;
+  background-color: var(--shade-day);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: var(--shade-night);;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.light {
+  color: var(--black);
+  background: var(--white);
+}
+.dark {
+  color: var(--night-white);
+  background: var(--night-black);
+}

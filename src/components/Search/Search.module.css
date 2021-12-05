@@ -1,15 +1,15 @@
 .search {
-    display: flex;
-    width: 100%;
-    margin-top: 32px;
-    margin-bottom: 16px;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  margin-top: 32px;
+  justify-content: space-between;
 }
-
 .button {
-    margin-left: 16px;
+  margin-left: 16px;
 }
-
 .searchBlock {
-    display: flex;
+  display: flex;
+}
+.search__input {
+  width: 320px;
 }

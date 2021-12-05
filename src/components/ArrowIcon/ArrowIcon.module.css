@@ -1,0 +1,8 @@
+.icon {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.icon__select {
+  transform: rotate(180deg);
+}

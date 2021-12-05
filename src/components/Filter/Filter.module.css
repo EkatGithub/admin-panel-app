@@ -1,19 +1,17 @@
 .filter {
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-    padding: 16px;
-    background: var(--white-blue);
-    border-radius: 8px;
-    margin-bottom: 32px;
-    box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding: 16px;
+  background: var(--white-blue);
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 16px;
 }
-
-.input {
-    width: 142px;
-    margin-right: 4px;
+.filter__input {
+  width: 142px;
+  margin-right: 4px;
 }
-
-.button {
-    margin-left: 5px;
+.filter__button {
+  margin-left: 5px;
 }

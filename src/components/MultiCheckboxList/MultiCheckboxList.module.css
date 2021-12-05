@@ -1,54 +1,38 @@
 .multiCheckboxListGroup {
-    position: relative;
-    margin: 0 16px;
-    box-sizing: border-box;
+  position: relative;
+  margin: 0 16px;
+  box-sizing: border-box;
 }
-
 .button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 192px;
-    background: var(--white);
-    border: 1px solid var(--blue);
-    box-sizing: border-box;
-    border-radius: 4px;
-    padding: 7px;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 192px;
+  background: var(--white);
+  border: 1px solid var(--blue);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 7px;
+  cursor: pointer;
 }
-
 .label {
-    margin: 0 0 8px;
+  margin: 0 0 8px;
 }
-
 .dropdown {
-    position: absolute;
-    right: 0;
-    margin-top: 4px;
-    z-index: 2;
+  position: absolute;
+  right: 0;
+  margin-top: 4px;
+  z-index: 100;
 }
-
 .checkbox {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
-
 .checkbox:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
 .value {
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 0;
-}
-
-.icon {
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.up {
-    transform: rotate(180deg);
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
 }

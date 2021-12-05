@@ -1,0 +1,38 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table__header {
+  background: var(--blue);
+  color: var(--white);
+}
+.table__header_th {
+
+}
+.table__item {
+  text-align: left;
+  padding: 12px 8px;
+  font-weight: normal;
+}
+.table__th {
+  display: flex;
+  align-items: center;
+}
+.table__icon {
+  margin-left: 9px;
+}
+.table__tr {
+  border-bottom: 1px solid var(--white-blue);
+}
+.table__checkbox {
+  padding: 0 2px 0 10px;
+  margin: 0;
+}
+.table__item_pointer {
+  cursor: pointer;
+}
+.table__thead {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
