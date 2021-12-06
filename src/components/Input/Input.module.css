@@ -1,6 +1,5 @@
 .block {
   position: relative;
-  max-width: 400px;
 }
 .inputGroup {
   display: flex;

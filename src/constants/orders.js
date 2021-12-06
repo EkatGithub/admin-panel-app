@@ -8,35 +8,35 @@ export const orders = [
     "name": "Чернышев Филипп Семенович",
     "loyalty": "Новичок",
     "confirmCode": "001",
-    "goods": [
+    "products": [
       {
         "article": "rt.13324",
-        "orderName": "Стил блейдс фо грасс",
+        "name": "Стил блейдс фо грасс",
         "price": 1907
       },
       {
         "article": "al.246011",
-        "orderName": "Газонокосилка Apple Magic Grass Remover",
+        "name": "Газонокосилка Apple Magic Grass Remover",
         "price": 20000
       },
       {
         "article": "al.246011",
-        "orderName": "Газонокосилка Apple Magic Grass Remover",
+        "name": "Газонокосилка Apple Magic Grass Remover",
         "price": 20000
       },
       {
         "article": "al.246011",
-        "orderName": "Газонокосилка Apple Magic Grass Remover",
+        "name": "Газонокосилка Apple Magic Grass Remover",
         "price": 20000
       },
       {
         "article": "al.246011",
-        "orderName": "Газонокосилка Apple Magic Grass Remover",
+        "name": "Газонокосилка Apple Magic Grass Remover",
         "price": 20000
       },
       {
         "article": "al.246011",
-        "orderName": "Газонокосилка Apple Magic Grass Remover",
+        "name": "Газонокосилка Apple Magic Grass Remover",
         "price": 20000
       }
     ]
@@ -50,15 +50,15 @@ export const orders = [
     "name": "Филиппов Степан Васильевич",
     "loyalty": "Новичок",
     "confirmCode": "002",
-    "goods": [
+    "products": [
       {
         "article": "rt.13024",
-        "orderName": "Блэк блейдс фо грасс",
+        "name": "Блэк блейдс фо грасс",
         "price": 8003
       },
       {
         "article": "al.24604",
-        "orderName": "Газонокосилка Apple Magic Grass Remover",
+        "name": "Газонокосилка Apple Magic Grass Remover",
         "price": 90000
       }
     ]
@@ -72,30 +72,30 @@ export const orders = [
     "name": "Тихонова Алина Давидовна",
     "loyalty": "Новичок",
     "confirmCode": "003",
-    "goods": [
+    "products": [
       {
         "article": "rt.52024",
-        "orderName": "Блэк блейдс эконом",
+        "name": "Блэк блейдс эконом",
         "price": 760
       },
       {
         "article": "rt.52024",
-        "orderName": "Блэк блейдс эконом",
+        "name": "Блэк блейдс эконом",
         "price": 760
       },
       {
         "article": "rt.52024",
-        "orderName": "Блэк блейдс эконом",
+        "name": "Блэк блейдс эконом",
         "price": 760
       },
       {
         "article": "rt.52024",
-        "orderName": "Блэк блейдс эконом",
+        "name": "Блэк блейдс эконом",
         "price": 760
       },
       {
         "article": "rt.52024",
-        "orderName": "Блэк блейдс эконом",
+        "name": "Блэк блейдс эконом",
         "price": 760
       }
     ]
@@ -109,10 +109,10 @@ export const orders = [
     "name": "Александрова Юлия Никитична",
     "loyalty": "Новичок",
     "confirmCode": "004",
-    "goods": [
+    "products": [
       {
         "article": "al.24601",
-        "orderName": "Газонокосилка Apple Magic Grass Remover",
+        "name": "Газонокосилка Apple Magic Grass Remover",
         "price": 5700
       }
     ]
@@ -136,10 +136,10 @@ export const orders = [
     "name": "Судакова Анастасия Ильинична",
     "loyalty": "Новичок",
     "confirmCode": "006",
-    "goods": [
+    "products": [
       {
         "article": "rt.12924",
-        "orderName": "Блэк блейдс фо грасс",
+        "name": "Блэк блейдс фо грасс",
         "price": 20500
       }
     ]
@@ -153,10 +153,10 @@ export const orders = [
     "name": "Зверева Арина Николаевна",
     "loyalty": "Новичок",
     "confirmCode": "007",
-    "goods": [
+    "products": [
       {
         "article": "rt.12014",
-        "orderName": "Вайт блейдс фо грасс",
+        "name": "Вайт блейдс фо грасс",
         "price": 1399
       }
     ]
@@ -170,20 +170,20 @@ export const orders = [
     "name": "Карташов Максим Кириллович",
     "loyalty": "Новичок",
     "confirmCode": "008",
-    "goods": [
+    "products": [
       {
         "article": "rt.12014",
-        "orderName": "Вайт блейдс голд эдишн",
+        "name": "Вайт блейдс голд эдишн",
         "price": 50000
       },
       {
         "article": "rt.12014",
-        "orderName": "Вайт блейдс голд эдишн",
+        "name": "Вайт блейдс голд эдишн",
         "price": 50000
       },
       {
         "article": "rt.12014",
-        "orderName": "Йеллоу блейдс фо грасс",
+        "name": "Йеллоу блейдс фо грасс",
         "price": 17810
       }
     ]
@@ -197,10 +197,10 @@ export const orders = [
     "name": "Васильев Вадим Даниилович",
     "loyalty": "Новичок",
     "confirmCode": "009",
-    "goods": [
+    "products": [
       {
         "article": "rt.12014",
-        "orderName": "Грин блейдс стандарт",
+        "name": "Грин блейдс стандарт",
         "price": 17008
       }
     ]
@@ -224,15 +224,15 @@ export const orders = [
     "name": "Козлов Вадим Даниилович",
     "loyalty": "Новичок",
     "confirmCode": "011",
-    "goods": [
+    "products": [
       {
         "article": "rt.12014",
-        "orderName": "Газонокосилка универсальная",
+        "name": "Газонокосилка универсальная",
         "price": 10000
       },
       {
         "article": "rt.12014",
-        "orderName": "Грин блейдс стандарт",
+        "name": "Грин блейдс стандарт",
         "price": 9008
       }
     ]
@@ -246,25 +246,25 @@ export const orders = [
     "name": "Васильева Диана Игоревна",
     "loyalty": "Новичок",
     "confirmCode": "012",
-    "goods": [
+    "products": [
       {
         "article": "rt.12014",
-        "orderName": "Газонокосилка эконом",
+        "name": "Газонокосилка эконом",
         "price": 8125
       },
       {
         "article": "rt.12014",
-        "orderName": "Газонокосилка эконом",
+        "name": "Газонокосилка эконом",
         "price": 8125
       },
       {
         "article": "rt.12014",
-        "orderName": "Газонокосилка эконом",
+        "name": "Газонокосилка эконом",
         "price": 8125
       },
       {
         "article": "rt.12014",
-        "orderName": "Газонокосилка эконом",
+        "name": "Газонокосилка эконом",
         "price": 8125
       }
     ]

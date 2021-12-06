@@ -1,0 +1,13 @@
+.menu__dropdown {
+    position: absolute;
+    top: -121px;
+    left: 0;
+  }
+  .menu__delete {
+    position: relative;
+  }
+  .menu__button {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+  }

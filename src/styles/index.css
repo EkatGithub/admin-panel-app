@@ -2,6 +2,7 @@
   --white: #FFFFFF;
   --black: #000000;
   --blue: #459DF5;
+  --dark-blue: #24588d;
   --green: #0FB864;
   --orange: #FF8C56;
   --red: #F53152;
@@ -42,4 +43,12 @@ body {
 .dark {
   color: var(--night-white);
   background: var(--night-black);
+}
+.headline {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+}
+.disabled {
+  background: rgba(0, 0, 0, 0.15) !important;
 }

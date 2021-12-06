@@ -1,9 +1,22 @@
 .menu {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    column-gap: 16px;
-    align-items: center;
-  }
-  .menu__count {
-    color: var(--blue);
-  }
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 16px;
+  align-items: center;
+}
+.menu__count {
+  color: var(--blue);
+}
+.menu__dropdown {
+  position: absolute;
+  top: -121px;
+  left: 0;
+}
+.menu__delete {
+  position: relative;
+}
+.menu__button {
+  width: 100%;
+  margin-top: 10px;
+  justify-content: center;
+}

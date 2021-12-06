@@ -1,6 +1,6 @@
 .main {
   display: grid;
-  grid-template-rows: [startline] 32px max-content auto 40px;
+  grid-template-rows: 32px max-content auto 40px;
   grid-auto-flow: row;
   gap: 32px;
   position: fixed;

@@ -16,6 +16,8 @@
   color: var(--light-blue);
 }
 .search__clear {
+  display: flex;
+  align-items: center;
   position: absolute;
   right: 11px;
   top: 0;

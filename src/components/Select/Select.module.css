@@ -1,0 +1,41 @@
+.select {
+    position: relative;
+    box-sizing: border-box;
+  }
+  .select__name {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+  }
+  .select__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: var(--white);
+    border: 1px solid var(--blue);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 7px;
+    cursor: pointer;
+  }
+  .select__label {
+    margin: 0 0 8px;
+  }
+  .select__dropdown {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 16px;
+    position: absolute;
+    left: 0;
+    margin-top: 4px;
+    z-index: 100;
+  }
+  .select__item {
+    border: none;
+    outline: 0;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+  }

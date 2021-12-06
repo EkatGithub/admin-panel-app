@@ -4,7 +4,7 @@ import styles from './Filter.module.css';
 import {Input} from "../Input/Input";
 import Button from "../Button/Button";
 import MultiCheckboxList from "../MultiCheckboxList/MultiCheckboxList";
-import {itemsStatusesList} from "./Filter.constants";
+import {statusesList} from "../../constants/statusesList";
 
 const Filter = memo(({fields, setFields, onSelectStatuses, onSubmit}) => {
   const {dateStart = '', dateEnd = '', statuses = [], ofSum = '', toSum = ''} = fields;
@@ -30,7 +30,7 @@ const Filter = memo(({fields, setFields, onSelectStatuses, onSubmit}) => {
       <MultiCheckboxList
         label="Статус заказа"
         defaultValue="Любой"
-        items={itemsStatusesList}
+        items={statusesList}
         handleSelect={(values) => onSelectStatuses(values)}
         selected={statuses}
       />

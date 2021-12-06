@@ -2,9 +2,10 @@ import styles from './App.module.css';
 import {useState} from "react";
 import cn from "classnames";
 import Header from "../Header/Header";
-import Table from "../Table/Table";
 import Footer from "../Footer/Footer";
 import SettingsTable from "../SettingsTable/SettingsTable";
+import OrderForm from "../OrderForm/OrderForm";
+import OrderTable from "../OrderTable/OrderTable";
 
 function App() {
   const [isDarkTheme,] = useState(false);
@@ -15,8 +16,9 @@ function App() {
     })}>
       <Header />
       <SettingsTable />
-      <Table />
+      <OrderTable />
       <Footer />
+      <OrderForm />
     </main>
   );
 }
