@@ -1,0 +1,13 @@
+.status {
+    display: flex;
+    align-items: center;
+  }
+  .status__name {
+    margin-left: 4px;
+  }
+  .status__name_done {
+    color: var(--green);
+  }
+  .status__name_disabled {
+    opacity: .5;
+  }
