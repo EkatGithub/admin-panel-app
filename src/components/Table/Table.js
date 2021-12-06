@@ -1,44 +1,44 @@
+import {useDispatch, useSelector} from "react-redux";
 import styles from './Table.module.css';
-import Th from "./Th";
-import CheckBox from "../CheckBox/CheckBox";
-import Td from "./Td";
-import Tr from "./Tr";
-import {dateFormat, moneyFormat} from "../../helpers";
+import Thead from "./Thead";
+import {useCallback, useState} from "react";
+import {ordersActions} from "../../store/orders";
+import Tbody from "./Tbody";
+import {getOrderList} from "../../store/orders";
+import {searchOrders} from "../../store/search";
 
+const Table = () => {
+  const [sortOption, setSortOption] = useState({value: '', isAscending: false});
+  const dispatch = useDispatch();
+  const orders = useSelector((state) => getOrderList(searchOrders(state)));
 
-const Table = ({orders}) => {
-  const handleSort = () => {}
+  const handleSort = useCallback((nameKey) => {
+    const {isAscending} = sortOption;
+    dispatch(ordersActions.sort({isAscending: !isAscending, nameKey}));
+    setSortOption({
+      value: nameKey,
+      isAscending: !isAscending
+    });
+  }, [dispatch, sortOption]);
+
+  const handleAllSelect = useCallback((status) => {
+    dispatch(ordersActions.selectGroup({
+      status,
+      ordersIds: orders.map(({id}) => id),
+    }));
+  }, [orders, dispatch]);
+
+  const handleSelect = useCallback((id, status) => {
+    dispatch(ordersActions.select({id, status}));
+  }, [dispatch]);
+
   return (
-    <table className={styles.table}>
-      <thead className={styles.table__thead}>
-        <tr className={styles.table__header}>
-          <Th width="3%">
-            <CheckBox className={styles.table__checkbox} />
-          </Th>
-          <Th width="7%">#</Th>
-          <Th onCLick={handleSort} width="13%">Дата</Th>
-          <Th onCLick={handleSort} width="10%">Статус</Th>
-          <Th onCLick={handleSort} width="10%">Позиций</Th>
-          <Th onCLick={handleSort} width="10%">Сумма</Th>
-          <Th onCLick={handleSort}>ФИО покупателя</Th>
-        </tr>
-      </thead>
-      <tbody>
-        {orders && orders.map(({id, name, status, count, sum, creationDate}) => (
-          <Tr key={id}>
-            <Td>
-              <CheckBox className={styles.table__checkbox} onChange={() => console.log(id)} />
-            </Td>
-            <Td>{id}</Td>
-            <Td>{dateFormat(creationDate)}</Td>
-            <Td>{status}</Td>
-            <Td>{count || '—'}</Td>
-            <Td>{moneyFormat(sum)}</Td>
-            <Td>{name}</Td>
-          </Tr>
-        ))}
-      </tbody>
-    </table>
+    <div className={styles.wrapper}>
+      <table className={styles.table}>
+        <Thead onAllSelect={handleAllSelect} onSort={handleSort} select={sortOption.value} isAscending={sortOption.isAscending} />
+        <Tbody orders={orders} onSelect={handleSelect} />
+      </table>
+    </div>
   );
 }
 export default Table;

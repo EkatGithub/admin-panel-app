@@ -1,0 +1,9 @@
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 16px;
+    align-items: center;
+  }
+  .menu__count {
+    color: var(--blue);
+  }

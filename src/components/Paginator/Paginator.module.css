@@ -1,0 +1,6 @@
+.paginator {
+    display: flex;
+  }
+  .paginator__number {
+    margin-left: 16px;
+  }

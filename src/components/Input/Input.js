@@ -7,7 +7,6 @@ export const Input = ({
     value = '',
     prepend,
     label = "",
-    onChange,
     type = "test",
     disabled = false,
     error,
@@ -24,7 +23,7 @@ export const Input = ({
         {prepend && <span className={styles.prepend}>{prepend}</span>}
         <input className={cn(styles.input, {
           [styles.padding]: prepend,
-        })} type={type} {...props} disabled={disabled} value={value} onChange={onChange} />
+        })} type={type} disabled={disabled} {...props} value={value} />
         {value && (
           <button type="button" className={styles.button} disabled={disabled}>
             <Icon type={disabled ? 'lock' : 'close'} />

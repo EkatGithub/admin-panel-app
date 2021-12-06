@@ -1,13 +1,13 @@
 import styles from './MultiCheckboxList.module.css';
 import {useCallback, useEffect, useState} from "react";
-import {Icon} from "../Icon/Icon";
 import cn from "classnames";
 import Dropdown from "../Dropdown/Dropdown";
 import CheckBox from "../CheckBox/CheckBox";
 import ArrowIcon from "../ArrowIcon/ArrowIcon";
 
 const MultiCheckboxList = ({
-    items, selected,
+    items,
+    selected,
     defaultValue = 'Выберите значение',
     label = '',
     handleSelect,
@@ -16,10 +16,10 @@ const MultiCheckboxList = ({
   const [viewDropDown, setViewDropDown] = useState(false);
 
   useEffect(() => {
-    if (!value) {
+    if (!value || !selected.length) {
       setValue(defaultValue);
     }
-  }, [defaultValue]);
+  }, [defaultValue, setValue, selected, value]);
 
   const handleChangeViewDropDown = useCallback(() => {
     setViewDropDown(!viewDropDown);
@@ -38,14 +38,14 @@ const MultiCheckboxList = ({
     }, '') : defaultValue;
     handleSelect(values);
     setValue(valueString);
-  }, [selected, defaultValue]);
+  }, [selected, defaultValue, handleSelect]);
 
   return (
     <div className={cn(styles.multiCheckboxListGroup)}>
       {label && <p className={styles.label}>{label}</p>}
       <button className={styles.button} onClick={handleChangeViewDropDown} type="button">
         <p className={styles.value}>{value}</p>
-        <ArrowIcon select={viewDropDown} />
+        <ArrowIcon select={!viewDropDown} />
       </button>
       {viewDropDown && (
         <Dropdown className={styles.dropdown}>
