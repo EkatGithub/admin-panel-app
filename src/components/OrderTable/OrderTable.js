@@ -1,13 +1,13 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useCallback, useState} from "react";
 import {ordersActions} from "../../store/orders";
-import {getOrderList} from "../../store/orders";
 import {searchOrders} from "../../store/search";
 import Wrapper from "../Wrapper/Wrapper";
 import styles from './OrderTable.module.css';
 import {Table, Thead, Tbody} from "../Table";
 import OrderForm from "../OrderForm/OrderForm";
 import Overlay from "../Overlay/Overlay";
+import {getOrdersPageNumber} from "../../store/pagination";
 
 const OrderTable = () => {
   const [sortOption, setSortOption] = useState({value: '', isAscending: false});
@@ -15,7 +15,7 @@ const OrderTable = () => {
   const [selectOrder, setSelectOrder] = useState({});
 
   const dispatch = useDispatch();
-  const orders = useSelector((state) => getOrderList(searchOrders(state)));
+  const orders = useSelector((state) => getOrdersPageNumber(searchOrders(state)));
 
   const handleSort = useCallback((nameKey) => {
     const {isAscending} = sortOption;

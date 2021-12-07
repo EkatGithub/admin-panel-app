@@ -16,7 +16,6 @@ const Menu = () => {
   }, [orders, dispatch]);
 
   const handleSelect = useCallback((status) => {
-    console.log(orders)
     dispatch(
       ordersActions.changeStatus(
         orders.map((order) => ({
