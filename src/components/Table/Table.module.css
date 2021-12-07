@@ -2,17 +2,9 @@
   width: 100%;
   border-collapse: collapse;
 }
-.wrapper {
-  position: relative;
-  overflow: auto;
-  margin-bottom: -32px;
-}
 .table__header {
   background: var(--blue);
   color: var(--white);
-}
-.table__header_th {
-
 }
 .table__item {
   text-align: left;

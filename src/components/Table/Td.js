@@ -1,10 +1,9 @@
 import cn from "classnames";
 import styles from './Table.module.css';
 
-const Td = ({className, children}) => {
+export const Td = ({className, children, ...props}) => {
   return (
-    <td className={cn(styles.table__item, className)}>
+    <td className={cn(styles.table__item, className)} {...props}>
       {children}
     </td>);
 }
-export default Td;

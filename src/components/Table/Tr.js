@@ -1,11 +1,13 @@
 import cn from "classnames";
 import styles from './Table.module.css';
 
-const Tr = ({className, children}) => {
+export const Tr = ({className, type = 'body', children, ...props}) => {
   return (
-    <tr className={cn(styles.table__tr ,className)}>
+    <tr className={cn({
+      [styles.table__tr]: type === 'body',
+      [styles.table__header]: type === 'head',
+    } ,className)} {...props}>
       {children}
     </tr>
   )
 }
-export default Tr;

@@ -1,26 +1,26 @@
 .menu__dropdown {
-    display: grid;
-    grid-template-rows: auto;
-    gap: 16px;
-    position: absolute;
-    top: -225px;
-    left: 0;
-  }
-  .menu__status {
-    position: relative;
-  }
-  .menu__button {
-    width: 100%;
-    margin-top: 10px;
-    justify-content: center;
-  }
-  .disabled {
-    background: rgba(0, 0, 0, 0.15);
-  }
-  .menu__item {
-    text-align: left;
-    border: none;
-    outline: 0;
-    background: none;
-    cursor: pointer;
-  }
+  display: grid;
+  grid-template-rows: auto;
+  gap: 16px;
+  position: absolute;
+  top: -225px;
+  left: 0;
+}
+.menu__status {
+  position: relative;
+}
+.menu__button {
+  width: 100%;
+  margin-top: 10px;
+  justify-content: center;
+}
+.disabled {
+  background: rgba(0, 0, 0, 0.15);
+}
+.menu__item {
+  text-align: left;
+  border: none;
+  outline: 0;
+  background: none;
+  cursor: pointer;
+}

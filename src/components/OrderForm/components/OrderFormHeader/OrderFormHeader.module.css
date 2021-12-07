@@ -1,10 +1,10 @@
 .popup__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 16px;
-    background: var(--blue);
-  }
-  .popup__title {
-    color: var(--light-blue);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: var(--blue);
+}
+.popup__title {
+  color: var(--light-blue);
+}
